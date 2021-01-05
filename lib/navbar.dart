@@ -1,5 +1,7 @@
 import 'package:admin_ui/homescreen.dart';
 import 'package:flutter/material.dart';
+import 'package:admin_ui/Restaurants.dart';
+import 'package:admin_ui/Restaurants.dart';
 
 class Nav extends StatefulWidget {
   @override
@@ -10,7 +12,7 @@ class _NavState extends State<Nav> {
   int _selectedIndex = 0;
   List<Widget> _widgetop = <Widget>[
     Home(),
-    Text('Manage Restaurant'),
+    Restaurants(),
     Text("Profiles")
   ];
   void _onitemtap(int index){
@@ -18,6 +20,7 @@ class _NavState extends State<Nav> {
       _selectedIndex = index;
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,6 +55,7 @@ class _NavState extends State<Nav> {
         child: _widgetop.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
+
         items: [
           new BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -72,3 +76,4 @@ class _NavState extends State<Nav> {
     );
   }
 }
+
