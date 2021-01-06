@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:admin_ui/navbar.dart';
@@ -13,12 +12,11 @@ class _RestaurantsState extends State<Restaurants> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
+        body: Container(
+
+        ),
 
 
-
-        body: new Center(
-        child: new Text("hello"),
-    )
     );
   }
 

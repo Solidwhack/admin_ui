@@ -38,7 +38,7 @@ class _NavState extends State<Nav> {
           children: <Widget>[
             new UserAccountsDrawerHeader(
               accountName: new Text('Mirza'),
-              accountEmail: new Text('email'),
+              accountEmail: new Text('Admin'),
               currentAccountPicture: new CircleAvatar(
                 backgroundColor: Colors.white,
                 child: Text("M"),
